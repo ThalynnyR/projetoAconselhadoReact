@@ -51,6 +51,7 @@
 
 .card{
   background: #ffffff;
+  padding: 20px;
   margin: 15px;
   border-radius: 4px;
 }
@@ -76,4 +77,51 @@
   height: 100%;
   text-align: center;
   object-fit: cover;
+}
+
+.imagem{
+  position: relative;
+}
+
+.imagem-mascara {
+  width: 350px;
+    height: 350px;
+    position: absolute;
+    /* top: 320 !important;
+    left: 125 !important; */
+    margin-top: 190px;
+    margin-left: -170px;
+  background:url(imagem/Rating3.svg) 0 0 no-repeat; /* imagem máscara */
+}
+
+.descricao{
+  margin-top: 30px;
+  text-align: left;
+  
+}
+
+.descricao h4{
+  font-weight: bold;
+  color: #636262;
+}
+
+.descricao p{
+    color: hsla(0, 0%, 0%, 0.59) !important;
+}
+
+.descricao h6{
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.descricao h5 strong{
+  color: #00338d;
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    width: inherit; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .avatar{
+    margin-left: 60px !important;
+  }
 }
