@@ -25,15 +25,33 @@ function FullWidthGrid(props) {
     return (
         <div className="card" container>
             <Grid container spacing={20}>
-                <div item xs={12} sm={3} className="avatar">
-                    <img alt="Remy Sharp" className="avatarInt" src="https://i.pinimg.com/564x/72/c3/56/72c35655c647e3b792aeb3dfa09a5caa.jpg" />
-                </div>
-                <div className="imagem">
-                    <div class="imagem-mascara"></div>
-                </div>
+                <Grid xs={12} sm={2}>
+                    <div item className="avatar">
+                        <img alt="perfil" className="avatarInt" src="https://i.pinimg.com/564x/72/c3/56/72c35655c647e3b792aeb3dfa09a5caa.jpg" />
+                    </div>
+                    <div className="imagem">
+                        <Avatar alt="rainting" src="/static/media/Rating3.c6bb52dc.svg" className="imagem-mascara" />
+                        {/* <p class="imagem-mascara"></p> */}
 
+                    </div>
+                    <p><Typography variant="subheading" gutterBottom>
+                        Raiting Atual
+                    </Typography>
+                    </p>
+                    <Typography variant="subheading" gutterBottom>
+                        Raiting 2017: 3
+                    </Typography>
+                    <Typography variant="subheading" gutterBottom>
+                        Raiting 2016: 4                    </Typography>
+                    <Typography variant="subheading" gutterBottom>
+                        Raiting 2015: 5
+                    </Typography>
+
+                </Grid>
+                <Grid xs={12} sm={1}></Grid>
                 <Grid item xs={12} sm={4} >
                     <div className="descricao">
+
                         <Typography item variant="h4" gutterBottom>
                             João Paulo Critis
                         </Typography>
@@ -79,16 +97,17 @@ function FullWidthGrid(props) {
                     {/* <Paper className={classes.paper}>xs=12 sm=6</Paper> */}
                 </Grid>
                 <Grid item xs={12} sm={5}>
-                   
-                        <div className="descricao">
+
+                    <div className="descricao">
                         <Typography variant="h5" gutterBottom>
                             <strong>Metas</strong>
                             <Metas />
-                            </Typography>
-                        </div>
-                   
+                        </Typography>
+                    </div>
+
                     {/* <Paper className={classes.paper}>xs=12 sm=6</Paper> */}
                 </Grid>
+
             </Grid>
         </div>
     );

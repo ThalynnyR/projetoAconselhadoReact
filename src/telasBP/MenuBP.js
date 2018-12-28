@@ -8,9 +8,9 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+// import SearchIcon from '@material-ui/icons/Search';
 import { purple } from '@material-ui/core/colors';
-import Icon from '@material-ui/core/Icon';
+// import Icon from '@material-ui/core/Icon';
 import logo from '../logo.svg';
 
 
@@ -88,10 +88,10 @@ function SearchAppBar(props) {
         <Toolbar>
           <img src={logo} className="App-logo" alt="logo" />
           <Typography className={classes.title} variant="h5" color="inherit" noWrap>
-            MyPD - Perfil do aconselhado
+            MyPD - Meu Perfil
           </Typography>
           <div className={classes.grow} />
-          <Typography variant="h7">Buscar aconselhado</Typography>
+          <Typography variant="h7">Buscar</Typography>
           <div className={classes.search}>
             {/* <div className={classes.searchIcon}>
               <SearchIcon />

@@ -59,7 +59,7 @@
 .avatar  {
   width: 200px !important;
   height: 200px !important;
-  margin: 40px !important;
+  margin: 40px 0px 40px 50px !important;
   display: flex;
     position: relative;
     overflow: hidden;
@@ -84,14 +84,15 @@
 }
 
 .imagem-mascara {
-  width: 350px;
-    height: 350px;
-    position: absolute;
-    /* top: 320 !important;
-    left: 125 !important; */
-    margin-top: 190px;
-    margin-left: -170px;
-  background:url(imagem/Rating3.svg) 0 0 no-repeat; /* imagem máscara */
+  width: 60px !important;
+  height: 60px !important;
+  margin-top: -85px;
+  margin-left: 120px;
+  /* position: absolute; */
+  /* margin-left: -116px; */
+  /* align-items: center; */
+  /* background: url(/static/media/Rating3.c6bb52dc.svg) 0 0 no-repeat; */
+  
 }
 
 .descricao{
@@ -117,11 +118,41 @@
   color: #00338d;
 }
 
-@media screen and (max-width: 850px) {
+.botaoAcon{
+  background: #ffa700 !important;
+}
+
+.linha{
+  width: 100%;
+  height: 50%;
+  padding: 5px 10px;
+}
+
+.linhaBP {
+  width: 90%;
+  height: 40%;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 1349px) {
   .card {
     width: inherit; /* The width is 100%, when the viewport is 800px or smaller */
   }
-  .avatar{
-    margin-left: 60px !important;
+  .avatar img{
+    margin:40px 20px!important;
   }
 }
+
+.list {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.miniCard {
+  margin: 5px;
+}
+
+.b{
+  font-weight: bold !important;
+}
+/* Perfil BP */
