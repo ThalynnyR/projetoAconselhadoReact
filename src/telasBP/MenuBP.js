@@ -91,7 +91,7 @@ function SearchAppBar(props) {
             MyPD - Meu Perfil
           </Typography>
           <div className={classes.grow} />
-          <Typography variant="h7">Buscar</Typography>
+          <Typography className="busca">Buscar</Typography>
           <div className={classes.search}>
             {/* <div className={classes.searchIcon}>
               <SearchIcon />

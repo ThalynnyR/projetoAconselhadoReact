@@ -7,6 +7,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import Metas from '../telasAconselhado/Metas'
 import ListaAcons from './ListaAcons'
+import Button from '@material-ui/core/Button';
 
 
 const styles = theme => ({
@@ -47,6 +48,17 @@ function FullWidthGrid(props) {
                     <Typography variant="subheading" gutterBottom>
                         Raiting 2015: 5
                     </Typography>
+
+                    <div className="botaoPerfil">
+                        <Button variant="contained" className="">
+                            Atualizar cadastro
+                        </Button>
+                    </div>
+                    <div className="botaoPerfil">
+                        <Button variant="contained" className="">
+                            Suporte
+                        </Button>
+                    </div>
 
                 </Grid>
                 <Grid xs={12} sm={1}></Grid>
@@ -105,7 +117,7 @@ function FullWidthGrid(props) {
                             <Metas />
                         </Typography>
                     </div>
-                        <ListaAcons />
+                    <ListaAcons />
                     {/* <Paper className={classes.paper}>xs=12 sm=6</Paper> */}
                 </Grid>
 

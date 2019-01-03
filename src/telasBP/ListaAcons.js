@@ -106,30 +106,30 @@ function PaperSheet(props) {
                 <strong>Lista de Aconselhados</strong>
             </Typography>
 
-            <div className={classes.list} as={Link} to='/aconselhado'>
-                {messages.map(({ id, nome, cargo, meta, porcentagem, person }) => (
-                    <Paper square className="miniCard" button>
-                        <Fragment key={id}>
+            <div>
+                {messages.map((dados) => (
+                    <Paper square className="miniCard">
+                        <Fragment key={dados.id}>
                             <div className="list">
                                 <Grid container spacing={20}>
                                     <Grid md={1} xs={12} sm={1} className="img">
-                                        <Avatar alt="Profile Picture" src={person} />
+                                        <Avatar alt="Profile Picture" src={dados.person} />
                                     </Grid>
                                     <Grid md={11} xs={12} sm={11}>
-                                        <Typography variant="body1" className="b"  gutterBottom>{nome}</Typography>
-                                        <Typography variant="caption" gutterBottom>{cargo}</Typography>
+                                        <Typography variant="body1" className="b"  gutterBottom>{dados.nome}</Typography>
+                                        <Typography variant="caption" gutterBottom>{dados.cargo}</Typography>
                                     </Grid>
                                 </Grid>
                                 <Grid container spacing={20}>
                                     <Grid md={1} xs={12} sm={1}></Grid>
                                     <Grid md={3} xs={12} sm={2}>
-                                        <Typography variant="subtitle2" gutterBottom>{meta}</Typography>
+                                        <Typography variant="subtitle2" gutterBottom>{dados.meta}</Typography>
                                     </Grid>
                                     <Grid md={7} xs={12} sm={5}>
-                                        <Line percent={porcentagem} strokeWidth="2" strokeColor="#005eb8" trailWidth="2" className="linhaBP" />
+                                        <Line percent={dados.porcentagem} strokeWidth="2" strokeColor="#005eb8" trailWidth="2" className="linhaBP" />
                                     </Grid>
                                     <Grid md={1} xs={12} sm={1} align='center'>
-                                        {porcentagem}%
+                                        {dados.porcentagem}%
                                     </Grid>
                                 </Grid>
                             </div>
