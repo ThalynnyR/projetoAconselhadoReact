@@ -112,11 +112,11 @@
 }
 
 .descricao p{
-    color: hsla(0, 0%, 0%, 0.59) !important;
+    color: hsla(0, 0%, 0%, 0.59);
 }
 
 .descricao h6{
-  color: rgba(0, 0, 0, 0.74);
+  color: rgba(0, 0, 0, 0.74) !important;
 }
 
 .descricao h5 strong{
@@ -171,3 +171,9 @@
   background: #696969e0;
   color: #ffffff;
 } 
+
+.resumo {
+  color: #636262;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}

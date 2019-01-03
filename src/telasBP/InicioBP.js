@@ -10,7 +10,7 @@ class InicioBP extends Component {
                 <p className="menu-lateral">
                     <Grid container spacing={20}>
                         <Grid xs={12} sm={10}>
-                            <Typography variant="h6" align='left'>
+                            <Typography variant="h6" className="resumo" align='left'>
                                 Resumo
                             </Typography>
                         </Grid>
