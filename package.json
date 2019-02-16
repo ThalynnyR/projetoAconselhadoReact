@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.7.0",
     "@material-ui/icons": "^3.0.1",
+    "auth0-js": "^9.8.2",
     "axios": "^0.18.0",
     "material-ui": "^0.20.2",
     "rc-progress": "^2.2.6",
@@ -29,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }

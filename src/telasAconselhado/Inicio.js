@@ -28,4 +28,6 @@ class Inicio extends Component {
     }
 }
 
+
+
 export default Inicio
